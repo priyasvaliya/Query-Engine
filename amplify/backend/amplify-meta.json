@@ -1,0 +1,101 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reacttest-dev-185306-authRole",
+      "UnauthRoleArn": "arn:aws:iam::845686786734:role/amplify-reacttest-dev-185306-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::845686786734:role/amplify-reacttest-dev-185306-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reacttest-dev-185306-deployment",
+      "UnauthRoleName": "amplify-reacttest-dev-185306-unauthRole",
+      "StackName": "amplify-reacttest-dev-185306",
+      "StackId": "arn:aws:cloudformation:us-east-1:845686786734:stack/amplify-reacttest-dev-185306/74148940-52f9-11ec-87d7-12796b1813d3",
+      "AmplifyAppId": "d67ic2k5gvwn2"
+    }
+  },
+  "auth": {
+    "reacttest2e1f0fb3": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-1_TSimgfdR5",
+        "UserPoolName": "safe_dalbox",
+        "AppClientID": "78c53cv78vuo38sbdjp9coabgu",
+        "AppClientIDWeb": "78c53cv78vuo38sbdjp9coabgu",
+        "HostedUIDomain": "gp6safedalbox",
+        "IdentityPoolId": "us-east-1:664297ac-c8f1-45be-8a52-6583c5609606",
+        "IdentityPoolName": "reactTest"
+      },
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "lastPushTimeStamp": "2021-12-01T23:00:50.438Z"
+    }
+  },
+  "interactions": {
+    "reactBot": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastPackageTimeStamp": "2021-12-01T23:01:57.773Z",
+      "distZipFilename": "reactBot-504c696d465277333734-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-reacttest-dev-185306-deployment",
+        "s3Key": "amplify-builds/reactBot-504c696d465277333734-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reacttest-dev-185306-deployment/amplify-cfn-templates/interactions/reactBot-cloudformation-template.json",
+        "logicalId": "interactionsreactBot"
+      },
+      "lastPushTimeStamp": "2021-12-02T00:51:41.097Z",
+      "output": {
+        "FunctionArn": "arn:aws:lambda:us-east-1:845686786734:function:reacttest_cfnlambda_043c6df1-dev",
+        "Region": "us-east-1",
+        "BotName": "ScheduleAppointment_dev"
+      },
+      "lastPushDirHash": "Uf4h+CLlZFxaL1kLiNVikWxVu94="
+    },
+    "test": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastPackageTimeStamp": "2021-12-02T00:50:06.616Z",
+      "distZipFilename": "test-4b6a506c584b64547973-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-reacttest-dev-185306-deployment",
+        "s3Key": "amplify-builds/test-4b6a506c584b64547973-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reacttest-dev-185306-deployment/amplify-cfn-templates/interactions/test-cloudformation-template.json",
+        "logicalId": "interactionstest"
+      },
+      "lastPushTimeStamp": "2021-12-02T00:51:41.143Z",
+      "output": {
+        "FunctionArn": "arn:aws:lambda:us-east-1:845686786734:function:reacttest_cfnlambda_d5512499-dev",
+        "Region": "us-east-1",
+        "BotName": "BookTrip_dev"
+      },
+      "lastPushDirHash": "bbbsbl4LJQAL/B+a/95/tOrP2kE="
+    }
+  }
+}

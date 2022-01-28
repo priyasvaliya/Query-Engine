@@ -1,0 +1,23 @@
+{
+  "auth": {
+    "reacttest2e1f0fb3": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "interactions": {
+    "reactBot": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
+    },
+    "test": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
+    }
+  }
+}

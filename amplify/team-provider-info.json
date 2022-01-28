@@ -1,0 +1,42 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reacttest-dev-185306-authRole",
+      "UnauthRoleArn": "arn:aws:iam::845686786734:role/amplify-reacttest-dev-185306-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::845686786734:role/amplify-reacttest-dev-185306-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reacttest-dev-185306-deployment",
+      "UnauthRoleName": "amplify-reacttest-dev-185306-unauthRole",
+      "StackName": "amplify-reacttest-dev-185306",
+      "StackId": "arn:aws:cloudformation:us-east-1:845686786734:stack/amplify-reacttest-dev-185306/74148940-52f9-11ec-87d7-12796b1813d3",
+      "AmplifyAppId": "d67ic2k5gvwn2"
+    },
+    "categories": {
+      "auth": {
+        "reacttest2e1f0fb3": {
+          "userPoolId": "us-east-1_TSimgfdR5",
+          "userPoolName": "safe_dalbox",
+          "webClientId": "78c53cv78vuo38sbdjp9coabgu",
+          "nativeClientId": "78c53cv78vuo38sbdjp9coabgu",
+          "identityPoolId": "us-east-1:664297ac-c8f1-45be-8a52-6583c5609606",
+          "identityPoolName": "reactTest",
+          "allowUnauthenticatedIdentities": true,
+          "authRoleArn": "arn:aws:iam::845686786734:role/Cognito_reactTestAuth_Role",
+          "authRoleName": "Cognito_reactTestAuth_Role",
+          "unauthRoleArn": "arn:aws:iam::845686786734:role/Cognito_reactTestUnauth_Role",
+          "unauthRoleName": "Cognito_reactTestUnauth_Role"
+        }
+      },
+      "interactions": {
+        "reactBot": {
+          "deploymentBucketName": "amplify-reacttest-dev-185306-deployment",
+          "s3Key": "amplify-builds/reactBot-504c696d465277333734-build.zip"
+        },
+        "test": {
+          "deploymentBucketName": "amplify-reacttest-dev-185306-deployment",
+          "s3Key": "amplify-builds/test-4b6a506c584b64547973-build.zip"
+        }
+      }
+    }
+  }
+}
